@@ -1,0 +1,14 @@
+<div *ngIf="FormData?.dirty" class="text-danger">
+    <div *ngIf="FormData?.errors?.['required']">
+        {{key}} phải nhập
+    </div>
+    <div *ngIf="FormData?.errors?.['minlength']">
+        {{key}} trên 6 kí tự
+    </div>
+    <div *ngIf="FormData?.errors?.['hasName']">
+        {{key}} phải chứa  " ky "
+    </div>
+    <div *ngIf="FormData?.errors?.['email']">
+        {{key}} phải đúng, VD: abc@gmail.com
+    </div>
+</div>

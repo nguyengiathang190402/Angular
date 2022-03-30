@@ -17,6 +17,10 @@ import { ProductService } from './services/product.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { LayoutComponent } from './layout/layout.component';
+
+import { ReactiveFormsModule } from '@angular/forms';
+import { ShowValidateComponent } from './components/show-validate/show-validate.component';
+import { ProductNameComponent } from './components/product-name/product-name.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +30,9 @@ import { LayoutComponent } from './layout/layout.component';
     StudentComponent,
     ProductDetailComponent,
     ProductFormComponent,
-    LayoutComponent
+    LayoutComponent,
+    ShowValidateComponent,
+    ProductNameComponent
     
   ],
   imports: [
@@ -35,7 +41,8 @@ import { LayoutComponent } from './layout/layout.component';
     NgbModule,
     FormsModule, // import cho cac component con su dung duoc,
     HttpClientModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    ReactiveFormsModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
