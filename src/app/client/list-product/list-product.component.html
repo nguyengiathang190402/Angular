@@ -1,0 +1,62 @@
+<!-- <div class="container px-4 px-lg-5">
+    <div class="list-product">
+
+        <div class="product" *ngFor="let pro of products">
+            <div class="items">
+                <span class="box-sale"></span>
+                
+                <div class="image">
+                      <a [routerLink]="['/product-detail/', pro.id]">
+                        <img class="img-prd" src="{{pro.image_url}}" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="name-product ">
+                <a class="content-product-h3" [routerLink]="['/product-detail/', pro.id]">{{pro.name}} </a>
+            </div>
+            <div class="price">
+                {{pro.price}}
+            </div>
+            <div class="button">
+                <a [routerLink]="['/product-detail/', pro.id]" ><button class="btn-ellipse btn-cart" type="submit">Mua ngay</button></a>
+            </div>
+        </div>
+        
+
+    </div>
+</div> -->
+<div class="row gx-4 gx-lg-5" >
+    <div class="col-md-4 mb-5" *ngFor="let pro of products">
+        <div class="card h-100 text-center">
+            <div class="card-body">
+                <a [routerLink]="['/phones/', pro.id]" ><img src="{{pro.image_url}}" alt=""  width="150"></a>
+            </div>
+            <a class="text-decoration-none" [routerLink]="['/phones/', pro.id]">{{pro.name}}</a>
+            <a class="text-decoration-none" [routerLink]="['/phones/', pro.id]"><p class="text-danger text-center">{{pro.price}}đ</p></a>
+            <div class="card-footer"><a [routerLink]="['/phones/', pro.id]" class="btn btn-primary btn-sm" type="submit" >Đặt hàng</a></div>
+        </div>
+    </div>
+    <!-- <div class="col-md-4 mb-5">
+        <div class="card h-100">
+            <div class="card-body">
+                <h6 class="card-title">iPhone 12 Pro Max 256GB</h6>
+                <img src="https://www.techone.vn/wp-content/uploads/2021/09/xanh-1-500x500.jpg" alt=""  width="150">
+            </div>
+            <p class="text-danger text-center">đ22.190.000</p>
+            <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">Đặt hàng</a></div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-5">
+        <div class="card h-100">
+            <div class="card-body">
+                <h6 class="card-title">iPhone 13 128GB</h6>
+                <img src="https://cdn.tgdd.vn/Products/Images/42/223602/iphone-13-1-2.jpg" alt=""  width="150">
+            </div>
+            <p class="text-danger text-center">đ24.390.000</p>
+            <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">Đặt hàng</a></div>
+        </div>
+    </div> -->
+    <main>
+      <router-outlet></router-outlet>
+  </main>
+</div>

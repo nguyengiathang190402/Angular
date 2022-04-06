@@ -16,11 +16,16 @@ import { ProductFormComponent } from './product-form/product-form.component';
 import { ProductService } from './services/product.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
-import { LayoutComponent } from './layout/layout.component';
+// import { LayoutComponent } from './layout/layout.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { ShowValidateComponent } from './components/show-validate/show-validate.component';
 import { ProductNameComponent } from './components/product-name/product-name.component';
+import { StatusComponent } from './components/status/status.component';
+import { AdminComponent } from './layouts/admin/admin.component';
+import { ClientComponent } from './layouts/client/client.component';
+import { ListProductComponent } from './client/list-product/list-product.component';
+import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,9 +35,14 @@ import { ProductNameComponent } from './components/product-name/product-name.com
     StudentComponent,
     ProductDetailComponent,
     ProductFormComponent,
-    LayoutComponent,
+    // LayoutComponent,
     ShowValidateComponent,
-    ProductNameComponent
+    ProductNameComponent,
+    StatusComponent,
+    AdminComponent,
+    ClientComponent,
+    ListProductComponent,
+    HomeComponent
     
   ],
   imports: [

@@ -4,43 +4,57 @@
       "name": "ai phôn",
       "desc": "áp bồ",
       "price": 2000000,
-      "id": 1
+      "id": 1,
+      "status": 1,
+      "image_url": "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/11/06/apple-iphone-12-mini-4.png"
     },
     {
       "name": "samsung s22",
       "desc": "samsung",
       "price": 2000000,
-      "id": 3
+      "id": 3,
+      "status": 1,
+      "image_url": "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/11/06/apple-iphone-12-mini-4.png"
     },
     {
       "name": "ai phôn 1",
       "desc": "áp bồ",
       "price": 1111111,
-      "id": 4
+      "id": 4,
+      "status": 1,
+      "image_url": "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/11/06/apple-iphone-12-mini-4.png"
     },
     {
       "name": "ai phôn 3",
       "desc": "áp bồ",
       "price": 100000,
-      "id": 5
+      "id": 5,
+      "status": 1,
+      "image_url": "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/11/06/apple-iphone-12-mini-4.png"
     },
     {
       "name": "ai phôn 4",
       "desc": "áp bồ",
       "price": 120000,
-      "id": 6
+      "id": 6,
+      "status": 1,
+      "image_url": "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/11/06/apple-iphone-12-mini-4.png"
     },
     {
       "name": "ai phôn 5",
       "desc": "áp bồ",
       "price": 1999999,
-      "id": 7
+      "id": 7,
+      "status": 1,
+      "image_url": "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/11/06/apple-iphone-12-mini-4.png"
     },
     {
       "name": "Nguyễn Gia Thắng",
       "desc": "áp bồoooo",
       "price": 5,
-      "id": 8
+      "id": 8,
+      "status": 1,
+      "image_url": "https://cdn.hoanghamobile.com/i/preview/Uploads/2020/11/06/apple-iphone-12-mini-4.png"
     }
   ]
 }
