@@ -27,7 +27,7 @@
 </div> -->
 <div class="row gx-4 gx-lg-5" >
     <div class="col-md-4 mb-5" *ngFor="let pro of products">
-        <div class="card h-100 text-center">
+        <div *ngIf="pro.status == 1" class="card h-100 text-center">
             <div class="card-body">
                 <a [routerLink]="['/phones/', pro.id]" ><img src="{{pro.image_url}}" alt=""  width="150"></a>
             </div>

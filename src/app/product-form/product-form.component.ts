@@ -31,7 +31,9 @@ export class ProductFormComponent implements OnInit {
       this.productDetail = {
         name: '',
         desc: '',
-        price: 0
+        image_url: '',
+        status: 1,
+        price: 0,
       };
     }
   }
@@ -45,7 +47,7 @@ export class ProductFormComponent implements OnInit {
       this.toastr.success("Thêm mới thành công");
     }
     // Tien hanh dieu huong ve trang danh sach
-    this.router.navigate(['/product']);
+    this.router.navigate(['/admin/phones']);
 
   }
 }

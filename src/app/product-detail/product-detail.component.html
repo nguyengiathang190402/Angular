@@ -1,8 +1,10 @@
 <p>product-detail works!</p>
-<a routerLink="../student">Student</a>
-
+<button class="btn btn-primary"><a style="text-decoration: none; color:white" routerLink="/admin/phones">Quay lại</a></button>
 <h1>Chi tiết sản phẩm {{productDetail.name}}</h1>
 <p>ID: {{productDetail.id}}</p>
 <p>Mô tả: {{productDetail.desc}}</p>
 <p>Giá: {{productDetail.price}}</p>
+<p>ảnh: <img src="{{productDetail.image_url}}" alt=""  width="100"></p>
+<p>Trạng thái: <span *ngIf="productDetail.status ==0">Không kích hoạt</span>
+    <span *ngIf="productDetail.status ==1">Kích hoạt</span></p>
 <a href=""><button class="btn btn-primary">Thêm vào giỏ hàng</button></a>

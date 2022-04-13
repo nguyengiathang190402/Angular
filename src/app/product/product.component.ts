@@ -24,7 +24,9 @@ export class ProductComponent implements OnInit {
   newProduct = {
     name: '',
     price: 0,
-    desc: ''
+    desc: '',
+    
+    status: 0,
   };
 
   onSubmit(product :any) {

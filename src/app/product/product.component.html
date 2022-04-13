@@ -49,6 +49,7 @@
           <td>Tên Sản Phẩm</td>
           <td>Giá Sản Phẩm</td>
           <td>Mô tả Sản Phẩm</td>
+          <td>ảnh</td>
           <td>Trạng Thái</td>
           <td>Hành động</td>
           <a routerLink="/product/create">
@@ -68,6 +69,7 @@
             </td>
             <td>{{product.price}}</td>
             <td>{{product.desc}}</td>
+            <td><img src="{{product.image_url}}" alt=""  width="100"></td>
             <td>
               <app-status
                 [status]="product.status"

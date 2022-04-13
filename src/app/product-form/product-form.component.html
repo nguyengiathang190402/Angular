@@ -2,6 +2,7 @@
 <h1 *ngIf="id">Chỉnh sửa sản phẩm {{productDetail.name}}</h1>
 <h1 *ngIf="id === undefined">Thêm mới sản phẩm</h1>
 
+<p>{{ productForm.value | json }}</p>
 
 <form #productForm="ngForm" (ngSubmit)="onUpdate(productForm.value)">
   <input *ngIf="id" type="hidden" placeholder="Ten"
@@ -29,6 +30,20 @@
     min="1"
     #price="ngModel"
   >
+  <div class="mb-3">
+    <label for="">Kích hoạt</label>
+    <input type="radio" value="1" id="status" name="status" class="form-check-input" #status="ngModel" [(ngModel)]="productDetail.status">
+  </div>
+  <div class="mb3">
+    <label for="">Không kích hoạt</label>
+    <input type="radio" value="0" id="status" name="status" class="form-check-input" #status="ngModel" [(ngModel)]="productDetail.status">
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="">Image</label>
+    <input #image="ngModel" type="text" class="form-control" name="image_url" placeholder="nhập link ảnh" [(ngModel)]="productDetail.image_url" required min="1" >
+    
+  </div>
+
   <div *ngIf="productForm.form.dirty" style="color:red">
   <div *ngIf=" name.errors?.['required']">Tên sản phẩm bắt buộc nhập</div>
   <div *ngIf=" desc.errors?.['minlength']">Mô tả trên 6 kí tự</div>
